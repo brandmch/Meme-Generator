@@ -1,7 +1,16 @@
 import React from 'react'
+import { datBoi } from '../Images/images'
+
 
 export default function Header() {
     return (
-        <h1>Header</h1>
+        <div>
+            <div>
+                <img src={datBoi} />
+            </div>
+            <div>
+
+            </div>
+        </div>
     )
 }
