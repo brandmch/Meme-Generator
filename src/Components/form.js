@@ -2,6 +2,12 @@ import React from "react";
 
 export default function Form() {
     return (
-        <h2>Form</h2>
+        <form>
+            <div className="input-fields">
+                <input />
+                <input />
+            </div>
+            <button>Create Meme</button>
+        </form>
     )
 }

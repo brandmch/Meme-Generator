@@ -1,4 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: yellow;
   color: black;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 20px;
+  color: aliceblue;
+  /* background-color: rgb(138, 43, 226); */
+  background: linear-gradient(45deg, rgb(138, 43, 226), rgb(138, 43, 226), red);
+}
+
+.header>h1 {
+  margin-right: auto;
+}
+
+.header>img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.header>h2 {
+  font-weight: 500;
+}
+
+/* .input-fields {
+  display: flex;
+} */
