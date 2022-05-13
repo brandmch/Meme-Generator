@@ -47,6 +47,7 @@ body {
   font-weight: 500;
   font-size: large;
   color: aliceblue;
+  border-style: none;
 }
 
 .input-fields {
@@ -74,4 +75,11 @@ body {
 
 .input2 {
   margin-left: 2%;
+}
+
+.meme>img {
+  width: 84%;
+  margin: auto;
+  margin-top: 6%;
+  display: flex;
 }

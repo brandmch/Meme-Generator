@@ -1,7 +1,10 @@
 import React from "react";
+import { ememe } from '../Images/images'
 
 export default function Meme() {
     return (
-        <h4>Meme</h4>
+        <div className="meme">
+            <img src={ememe} />
+        </div>
     )
 }
