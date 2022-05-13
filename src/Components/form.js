@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Form() {
     return (
-        <form>
+        <form className="form">
             <div className="input-fields">
-                <input />
-                <input />
+                <input className="input1" type="text" value=""></input>
+                <input className="input2" type="text" value=""></input>
             </div>
             <button>Create Meme</button>
         </form>
