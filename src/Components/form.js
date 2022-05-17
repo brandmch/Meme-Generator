@@ -1,10 +1,13 @@
 import React from "react";
+import Meme from "./meme";
 
 export default function Form() {
 
+    const [meme, setMeme] = React.useState()
+
     function clickHandler(e) {
         e.preventDefault();
-        console.log("yolo swag haha 420");
+        setMeme(Meme());
     }
 
     return (
@@ -14,6 +17,7 @@ export default function Form() {
                 <input className="input2" type="text" placeholder="Bottom Text"></input>
             </div>
             <button onClick={clickHandler}>Create Meme</button>
+            {meme}
         </div>
     )
 }

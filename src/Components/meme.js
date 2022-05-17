@@ -8,14 +8,14 @@ function getMeme() {
 
     let meme = memes.data.memes[x];
 
-    return meme.url;
+    return <img src={meme.url} />
 }
 
 export default function Meme() {
 
     return (
         <div className="meme">
-            <img src={getMeme()} />
+            {getMeme()}
         </div>
     )
 } 

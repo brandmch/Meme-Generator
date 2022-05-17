@@ -10,6 +10,5 @@ root.render(
   <React.StrictMode>
     <Header />
     <Form />
-    <Meme />
   </React.StrictMode>
 );
