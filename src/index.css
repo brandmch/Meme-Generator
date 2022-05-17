@@ -82,4 +82,9 @@ body {
   margin: auto;
   margin-top: 6%;
   display: flex;
+
+}
+
+.meme>img:hover {
+  filter: brightness(50%);
 }
