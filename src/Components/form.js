@@ -3,11 +3,20 @@ import Meme from "./meme";
 
 export default function Form() {
 
-    const [meme, setMeme] = React.useState()
+    const [meme, setMeme] = React.useState({
+        topText: "",
+        bottomText: "",
+        url: Meme()
+    })
 
     function clickHandler(e) {
         e.preventDefault();
-        setMeme(Meme());
+        setMeme(ogMeme => {
+            return {
+                ...ogMeme,
+                url: Meme()
+            }
+        });
     }
 
     return (
@@ -17,7 +26,11 @@ export default function Form() {
                 <input className="input2" type="text" placeholder="Bottom Text"></input>
             </div>
             <button onClick={clickHandler}>Create Meme</button>
-            {meme}
+
+            <div className="meme">
+                <img src={meme.url} />
+            </div>
         </div>
     )
 }
+
